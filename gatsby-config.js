@@ -15,7 +15,20 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
+
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        /*
+         * De volledige URL van je Headless WordPress site's GraphQL API.
+         * Voorbeeld : "https://www.example-site.com/graphql"
+         */
+        url: "http://themazerunnerseries.local/graphql",
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
